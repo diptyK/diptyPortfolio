@@ -537,11 +537,11 @@ a.work_button:hover{
        top:1.2rem;
        left: 1rem;
    }
-   .form_submit{
+   button.form_submit{
        color:#fafaf8;
        background:linear-gradient(62deg, #fc5d76, #bd032b);
        width: 100%;
-       height:3rem;
+       line-height:3rem;
        border-radius: 3rem;
 
    }
@@ -638,13 +638,6 @@ span.copyright-name{
     }
     
 }
-
-
-
-
-
-
-
 
 
 
@@ -997,3 +990,40 @@ nav a{
         font-size: 1.4rem;
         }
  }
+
+
+ 
+button.form_submit[type="submit"]{
+    margin-bottom: 10px;
+}
+
+
+#status{
+    text-align: center;
+    margin:1rem auto;
+    width:90%;
+}
+#status.success{
+    color:greenyellow;
+    animation:mystatus 4s ease forwards;
+}
+#status.error{
+    color:rgb(139, 109, 9);
+    animation:mystatus 4s ease forwards;
+}
+
+@keyframes mystatus{
+    0%{
+        opacity:1;
+        pointer-events:all ;
+    }
+    90%{
+        opacity:1;
+        pointer-events:all ;
+    }
+    100%{
+        opacity:0;
+        pointer-events:none ;
+    }
+}
+

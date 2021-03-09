@@ -60,7 +60,7 @@
             <i class="fa fa-envelope" aria-hidden="true"></i>     Gmail
         </a>
    
-        <a class="resume" href="CV Dipty.docx" target="_blank">
+        <a class="resume" href="cvDipty.docx" target="_blank">
             <i class="fa fa-graduation-cap" aria-hidden="true"></i>     Resume
         </a>
     </div>
@@ -198,7 +198,7 @@
             <article class="card">
                 <div class="card_thumbnail">
                     <a class="card_img_container" href="https://diptyk.github.io/calculator/" target="_blank">
-                        <img class="card_img" src="calculator.png" alt="template of website ">
+                        <img class="card_img" src="calculator.png" alt="template of website about to add  ">
                     </a>
                 </div>
                 <div class="card_description">
@@ -284,7 +284,7 @@
                 <div class="grayZone">
                     <div class="form">
                         <!-- think of submit a form -->
-                        <form method="post" action="#">
+                        <form  action="https://formspree.io/f/xqkgraya" method="POST" id="my-form">
                             <div class="form_group">
                                 <input class="form_input" name="name" type="text" placeholder="Name" required="">
                                 <img class="form_input-img" src="user.png" alt="user icon">
@@ -295,15 +295,16 @@
                                 <img class="form_input-img" src="msg.png" alt="user icon">
                             </div>
                             <div class="form_group">
-                                <textarea class="form_input" name="message" placeholder="Message" rows="8"
-                                    required=""></textarea>
+                                <textarea class="form_input" name="message" id="message" placeholder="Message" rows="8"
+                                    required="" style="resize:vertical;"></textarea>
                                 <img class="form_input-img" src="pencil.png" alt="user icon">
                             </div>
-                            <div class="form_group">
-                                <input id="submit" class="form_submit " type="submit" value="Send Message">
-                            </div>
+                           
+                                <button id="submit" class="form_submit " type="submit" value="Send Message">Send Message</button>
+                            
                         </form>
                     </div>
+                    <div id="status"></div>
                 </div>
             </div>
         </div>
@@ -315,7 +316,8 @@
 </footer>
     <!-- font awesome cdn link -->
     <script src="https://use.fontawesome.com/7cc5ee305e.js"></script>
-  
+  <!--script tag for mail redirecting-->
+  <script src="./main.js"></script>
 </body>
 
 </html>
